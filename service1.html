@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<title>Differentiation Consulting</title>
+</head>
+
+<body>
+<div class=navigation-background-1>
+    <div class="container-row">
+        <div class="nav-columns">
+        <div id="nav-logo-div">
+        <a href="./index.html"><img src="./images/nav-logo.png" width="90px" class="image" style="display: flex; align-items: center;"></a>
+        </div>
+
+        <div class="nav-horizontal-line">
+            <hr style="width:100%;">
+        </div>
+        
+        <div class="links-div">
+        <p class="nav-link">
+
+        <ul class="nav-ul">
+            <li><a href="./index.html#consulting-section" id="services-link">Services</a></li>
+            <li><a href="./index.html#testimonials-section" id="testimonials-link">Testimonials</a></li>
+            <li><a href="./index.html#faq" id="faqs-link">FAQs</a></li>
+        </ul>
+        </p>
+        </div>
+<!------------Hamburger Box------------>
+     <div id="box-div"><a href="javascript:void(0);" class="icon" onclick="MenuClick()" id="box"> <img src="images/burger-menu.svg" width="25" id="menu-box"> </a>
+     </div>
+    </div>
+  </div>
+</div>
+
+<!------------Start of UX & Experimentation Page------------>
+
+<div class="background-1">
+    <div class="container-row">
+        <div class=s1>
+            <p class="big-service-heading">UX & Experimentation</p>
+                <p class="description-s1" id="diff-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at risus egestas, condimentum elit sed, congue sem. Ut in interdum dui, sed fermentum libero. Nulla viverra lacus consectetur dapibus dapibus. Praesent vulputate porta venenatis.<br><br>
+
+                In urna leo, convallis nec ligula ut, vestibulum posuere lacus. Vivamus tincidunt scelerisque ante, et imperdiet tellus dapibus sit amet. Aliquam faucibus est pulvinar scelerisque porta. Nulla luctus sed risus nec venenatis. Curabitur at orci in justo aliquet molestie. Quisque euismod, felis sed facilisis faucibus, orci mi porta dolor, a varius erat lacus sed magna.
+                </p>
+
+             <div id="service-faq">
+                <button class="accordion"><b>But why don't top brands focus on differentiation themselves?</b></button>
+                <div class="panel-2">
+                    <p class="accordion-text">I am based in the UK & I'm currently living in India. However, I work fully remotely. My usual time zones for work are BST, EST and PST.
+                    </p>
+                </div>
+            </div>
+
+             <div id="service-faq">
+                <button class="accordion"><b>But why don't top brands focus on differentiation themselves?</b></button>
+                <div class="panel-2">
+                    <p class="accordion-text">I am based in the UK & I'm currently living in India. However, I work fully remotely. My usual time zones for work are BST, EST and PST.
+                    </p>
+                </div>
+            </div>
+
+
+             <div id="service-faq">
+                <button class="accordion"><b>But why don't top brands focus on differentiation themselves?</b></button>
+                <div class="panel-2">
+                    <p class="accordion-text">I am based in the UK & I'm currently living in India. However, I work fully remotely. My usual time zones for work are BST, EST and PST.
+                    </p>
+                </div>
+            </div>
+
+
+             <div id="service-faq">
+                <button class="accordion"><b>But why don't top brands focus on differentiation themselves?</b></button>
+                <div class="panel-2">
+                    <p class="accordion-text">I am based in the UK & I'm currently living in India. However, I work fully remotely. My usual time zones for work are BST, EST and PST.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class=footer-background-1>
+    <div class="container-row">
+        <div class="footer-columns">
+        <div>
+            <img src="./images/footer-logo.png" width="125px" class="image" style="display: flex; align-items: center;">
+        </div>
+        <div>
+        <div style="display: flex; align-items: center; height: 100%;">
+            <hr style="width: 100%; border: none; border-top: 1px solid white;">
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+</script>
+
+</body>
+</html>
